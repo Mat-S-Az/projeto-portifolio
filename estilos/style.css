@@ -26,11 +26,13 @@
 }
 
 body {
+  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
   line-height: 1.8em;
+ 
 }
 
 #skill-container i{ 
@@ -42,6 +44,11 @@ body {
 
 
 header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   background-color: var(--destaque);
   color: var(--texto);
   padding: 10px;
@@ -250,15 +257,14 @@ h1 {
 .imagem-projeto{
   width: 400px;
   height: 300px;
-  overflow: hidden;
-  margin: auto;
+  overflow: hidden; 
   border-radius: 8px;
 }
 .projeto{
   margin-bottom: 20px;
   background-color: var(--fundo-principal);
   border-radius: 8px;
-  padding: 10px;
+  padding: 5px;
   border-left: 5px solid var(--destaque);
   transition: border-color 0.5s, border-width 0.5s;
 }
@@ -285,6 +291,22 @@ h1 {
 
 
 
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  padding: 5px;
+  height: 38px;
+  width: 100%;
+  
+}
+
+
+
+
+
 @media screen and (min-width: 768px) {
   #skill-container {
     grid-template-columns: 1fr 1fr;
@@ -296,22 +318,57 @@ h1 {
     align-items: center;
   }
   .projeto img{
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 8px; 
+  }
+  .imagem-projeto{
+     width: 200px;
+    height: 220px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;  
+  } 
+  #cordel{
+    object-position: left;
+  }
+  #login{
+    content: url(img/login-vertical.png); 
+  }
   
-}
-.imagem-projeto{
-  width: 400px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 8px;
-  flex-shrink: 0;
-  
-}
+  main{
+    grid-template-columns: auto 300px minmax(0, 1fr) auto;
+    gap: 10px;
+   
+    
+  }
+  #perfil{
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    position: sticky;
+    top: 60px;
+    
+    width: 300px;
+    height: fit-content;
+    margin-left: 10px;
+  }
+  #perfil p { 
+    line-height: 1.5em;
+  }
+  #conteudo{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  #ficha {
+    margin-bottom: 0%;
+  }
   
 } 
+
+
 
 
 
