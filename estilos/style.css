@@ -22,25 +22,22 @@
   --destaque: #338eaa;
   --destaque-inverso: #015e63;
   --fundo-card: #ffffff;
-
 }
 
 body.escuro {
---fundo-principal: #121718;
---texto: #d9e1e3;
---texto-inverso: #121718;
---destaque: #5cc2d8;
---destaque-inverso: #1b6f7a;
---fundo-card: #1c2223;
+  --fundo-principal: #121718;
+  --texto: #d9e1e3;
+  --texto-inverso: #121718;
+  --destaque: #5cc2d8;
+  --destaque-inverso: #1b6f7a;
+  --fundo-card: #1c2223;
 }
 
 body {
-  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5em;
+  line-height: 1.8em;
   background-color: var(--fundo-principal);
   color: var(--texto);
-  line-height: 1.8em;
   transition: background-color 0.2s, color 0.5s;
 }
 
@@ -48,9 +45,6 @@ body {
   font-size: 1.5em;
   color: var(--destaque);
 }
-
-
-
 
 header{
   position: sticky;
@@ -63,8 +57,7 @@ header{
   padding: 10px;
   display: flex;
   justify-content: flex-end;
-  align-content: center;
-  flex-shrink: 1;
+  align-items: center;
 }
 
 nav#menu ul{
@@ -88,14 +81,10 @@ nav#menu a:hover {
   color: var(--destaque);
 }
 
-
-
-
-
 main {
   display: grid;
   grid-template-columns: auto 90vw auto;
-  grid-template-rows: auto auto
+  grid-template-rows: auto auto;
 }
 
 #perfil{
@@ -121,9 +110,6 @@ h1 {
   color: var(--destaque);
 }
 
-
-
-
 #foto{
   overflow: hidden;
   width: 200px;
@@ -141,7 +127,6 @@ h1 {
 #social {
   display: flex;
   justify-content: center;
-
 }
 #social a {
   text-decoration: none;
@@ -151,39 +136,9 @@ h1 {
   transition: 0.3s;
 }
 #social a:hover {
-  color: #93c5fd;
+  color: var(--destaque-inverso);
   font-size: 2.05em;
- 
 }
-
-
-
-
-#home{
-  display: flex;
-  flex-direction: column;
-  
-  background-color: var(--fundo-card);
-  padding: 10px;
-  margin: 10px;
-  border-radius: 2%;
-  padding: 20px;
-}
-#video{
-  position: relative;
-  width: 100%;
-  margin: auto;
-  aspect-ratio: 16/9;
-}
-#video iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
 
 #skills {
   margin-top: 30px;
@@ -222,8 +177,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-  
-
 .degrees {
   background-color: var(--fundo-principal);
   padding: 2px 20px;
@@ -236,7 +189,7 @@ h1 {
 .degrees:hover {
   border-left: 15px solid var(--destaque-inverso);
   cursor: pointer;
-  box-shadow: 0.1px 0.1px 5px#1f293734;
+  box-shadow: 0 0 5px rgba(31, 41, 55, 0.34);
 }
 .box {
   background-color: var(--fundo-card);
@@ -257,7 +210,6 @@ h1 {
   font-size: 0.8em;
   color: var(--texto);
 }
-
 
 #projetos {
   display: flex;
@@ -286,7 +238,6 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  
 }
 .projeto p {
   margin-bottom: 5px;
@@ -297,9 +248,6 @@ h1 {
   font-size: 1.2em;
 }
 
-
-
-
 footer{
   display: flex;
   justify-content: center;
@@ -309,12 +257,7 @@ footer{
   padding: 5px;
   height: 38px;
   width: 100%;
-  
 }
-
-
-
-
 
 @media screen and (min-width: 768px) {
   #skill-container {
@@ -327,13 +270,13 @@ footer{
     align-items: center;
   }
   .projeto img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px; 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; 
   }
   .imagem-projeto{
-     width: 200px;
+    width: 200px;
     height: 220px;
     flex-shrink: 0;
     overflow: hidden;
@@ -342,22 +285,16 @@ footer{
   #cordel{
     object-position: left;
   }
-  #login{
-    content: url(img/login-vertical.png); 
-  }
   
   main{
     grid-template-columns: auto 300px minmax(0, 1fr) auto;
     gap: 10px;
-   
-    
   }
   #perfil{
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     position: sticky;
     top: 60px;
-    
     width: 300px;
     height: fit-content;
     margin-left: 5px;
@@ -375,7 +312,6 @@ footer{
   #ficha {
     margin-bottom: 0%;
   }
-  
 } 
 
 

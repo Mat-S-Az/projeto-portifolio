@@ -3,46 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Matheus Azevedo, estudante de Análise e Desenvolvimento de Sistemas com projetos em HTML, CSS e Python.">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
     <script src="https://kit.fontawesome.com/a95d359acf.js" crossorigin="anonymous"></script>
     <title>Portifólio Matheus Azevedo</title>
 </head>
 <body>
     <header>
-        <nav id="menu">
+        <nav id="menu" aria-label="Menu principal">
             <ul>
-                <li><a href="#home" class="link"><i class="fa-solid fa-house" ></i></a></li>
-                <li><a href="#skills" class="link"><i class="fa-solid fa-brain" ></i></a></li>
-                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap" ></i></a></li>
-                <li><a href="#projetos" class="link"><i class="fa-solid fa-diagram-project" ></i></a></li>
-                <li><a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#home" class="link" aria-label="Início"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class="link" aria-label="Skills"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link" aria-label="Formação"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link" aria-label="Projetos"><i class="fa-solid fa-diagram-project"></i></a></li>
+                <li><a href="#" id="botao-tema" aria-label="Alternar tema"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="perfil">
-            <div id="ficha" class="card">
-                <div id="foto"><img src="imagens/perfil.jpg" alt="foto perfil"></div>
-                <h1>Matheus Azevedo</h1>
-                <p>Estudante do primeiro semestre de Análise e Desenvolvimento de Sistemas, com conhecimento básico em Python, HTML5 e CSS3.
-                Focado em desenvolver as habilidades necessárias para me tornar desenvolvedor Full‑Stack, criando projetos para aprimorar programação e resolução de problemas.
-                Interessado em desenvolvimento de software, tecnologias web e crescimento contínuo na área de tecnologia.</P>
-                <div id="social">
-                    <a href="www.linkedin.com/in/matheus-azevedo-mike-7b8a963b5" target="_blank" rel="nofollow"> <i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Mat-S-Az" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/msazevedo.mike/#" target="_blank" rel="nofollow"><i class="fa-brands fa-square-instagram"></i></a>
+            <div id="home" class="card">
+                <div id="ficha" class="card">
+                    <div id="foto"><img src="imagens/perfil.jpg" alt="foto perfil"></div>
+                    <h1>Matheus Azevedo</h1>
+                    <p>Estudante do primeiro semestre de Análise e Desenvolvimento de Sistemas, com conhecimento básico em Python, HTML5 e CSS3.
+                    Focado em desenvolver as habilidades necessárias para me tornar desenvolvedor Full‑Stack, criando projetos para aprimorar programação e resolução de problemas.
+                    Interessado em desenvolvimento de software, tecnologias web e crescimento contínuo na área de tecnologia.</P>
+                    <div id="social">
+                        <a href="www.linkedin.com/in/matheus-azevedo-mike-7b8a963b5" target="_blank" rel="nofollow"> <i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Mat-S-Az" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/msazevedo.mike/#" target="_blank" rel="nofollow"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="conteudo">
-            <div id="home" class="card">
-                <h1><i class="fa-solid fa-handshake"></i> Deixe-me apresentar</h1>
-                <div id="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VdWfSfWA_BQ?si=HR9UWum9pvmAIV65" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+           
             <div id="skills" class="card">
                 <h1><i class="fa-solid fa-brain"></i> Minhas skills</h1>
 
